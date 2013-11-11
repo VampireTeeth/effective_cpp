@@ -9,7 +9,19 @@
 #include <iostream>
 using namespace std;
 
-int main(int argc, char** argv) {
 
+
+void f(){
+	cout << "f() being called" << endl;
+}
+
+void f(int i) {
+	cout << "f(int) being called" << endl;
+}
+
+
+int main(int argc, char** argv) {
+	f();
+	f(10);
 	return 0;
 }
