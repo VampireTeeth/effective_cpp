@@ -19,9 +19,14 @@ void f(int i) {
 	cout << "f(int) being called" << endl;
 }
 
+void g(int i = 0) {
+	cout << "g() being called with argument i = " << i << endl;
+}
 
 int main(int argc, char** argv) {
 	f();
 	f(10);
+	g();
+	g(11);
 	return 0;
 }
