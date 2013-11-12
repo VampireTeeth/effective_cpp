@@ -20,10 +20,12 @@ inline void Natural::error(const string& msg) {
 }
 
 Natural::Natural(const Natural& rhs) {
+	cout << "Natural::Natural(const Natural&) being called" << endl;
 	init(rhs.value);
 }
 
 Natural::Natural(int initValue){
+	cout << "Natural::Natural(int) being called" << endl;
 	if(initValue > 0) {
 		init(initValue);
 	}else {
