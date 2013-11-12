@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include "Natural.h"
+
 using namespace std;
 
 inline void Natural::init(unsigned int v) {
