@@ -24,5 +24,4 @@ private:
 
 };
 
-
 #endif /* NATURAL_HPP_ */

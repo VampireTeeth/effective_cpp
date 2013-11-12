@@ -7,6 +7,7 @@
 //============================================================================
 
 #include <iostream>
+#include "Natural.h"
 using namespace std;
 
 
@@ -28,5 +29,10 @@ int main(int argc, char** argv) {
 	f(10);
 	g();
 	g(11);
+
+	cout << "------------------------------------" << endl;
+	Natural n1(17);//Nomal constructor being called
+	Natural n2(n1);//Copy constructor being called
+	Natural n3 = n1;//Copy constructor being called
 	return 0;
 }
