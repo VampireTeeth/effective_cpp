@@ -6,9 +6,9 @@ using namespace std;
 
 namespace std{
 
-    class Date{};
-    class Address{};
-    class Country{};
+    class Address;
+    class Date;
+    class Country;
 
     class PersonImpl {
 
@@ -22,10 +22,10 @@ namespace std{
         virtual Country country() const;
 
     private:
-        const string name_;
-        Date date_;
-        Address address_;
-        Country country_;
+        const string& name_;
+        const Date& date_;
+        const Address& address_;
+        const Country& country_;
     };
 }
 #endif

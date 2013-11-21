@@ -1,15 +1,21 @@
+RM=rm -rf
 CC=g++
-CFLAGS=-gc -Wall
-SRCS:=Main.cpp Person.cpp
+CFLAGS=-g -c -Wall
+SRCS:=PersonImpl.cpp Person.cpp  Main.cpp
 SRC:=src
 DEBUG:=debug
 OBJECTS:=$(SRCS:%.cpp=$(DEBUG)/%.o)
+EXECUTABLE:=$(DEBUG)/Main
 
 all: $(EXECUTABLE)
 
 $(EXECUTABLE):$(OBJECTS)
 	$(CC) $<  -o $@
 
-$(DEBUG)/%.o:$(SOURCES)/%.cpp
+$(DEBUG)/%.o:$(SRC)/%.cpp
 	$(CC) $< $(CFLAGS) -o $@
+
+
+clean:
+	$(RM) $(OBJECTS) $(EXECUTABLE)
 
