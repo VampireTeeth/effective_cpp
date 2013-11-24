@@ -1,5 +1,5 @@
-#ifndef EBDER_GOOD_DESIGN_H_
-#define HEBDER_GOOD_DESIGN_H_
+#ifndef HEADER_GOOD_DESIGN_H_
+#define HEADER_GOOD_DESIGN_H_
 
 namespace std{
 

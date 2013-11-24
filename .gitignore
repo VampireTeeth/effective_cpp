@@ -1,3 +1,7 @@
 /*.vl*
-/*/tags
+/**/*.vl*
+/**/tags
+/**/*.wspsettings
 /*.wspsettings
+/**/*.o
+/**/*.d
