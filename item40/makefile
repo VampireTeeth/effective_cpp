@@ -4,6 +4,7 @@ DEBUGDIR:=debug
 SOURCES:=contacts.cpp main.cpp
 OBJECTS:=$(SOURCES:%.cpp=$(DEBUGDIR)/%.o)
 EXECUTABLE:=debug/main
+RM:=rm -rf
 
 all : $(EXECUTABLE)
 	@echo $(OBJECTS)
@@ -13,4 +14,7 @@ $(EXECUTABLE) : $(OBJECTS)
 
 $(DEBUGDIR)/%.o : %.cpp
 	$(CC) $(CFLAGS) -o $@ $^
+
+clean:
+	$(RM) $(OBJECTS) $(EXECUTABLE)
 
